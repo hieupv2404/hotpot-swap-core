@@ -1,0 +1,43 @@
+{
+  "name": "hotpot-swap-core",
+  "version": "1.0.0",
+  "description": "READM",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy:normal": "hardhat run --network rinkeby",
+    "deploy:local": "NODE_ENV=local hardhat run --network rinkeby",
+    "deploy:dev": "NODE_ENV=dev hardhat run --network rinkeby",
+    "deploy:prod": "NODE_ENV=prod hardhat run --network rinkeby",
+    "verify:local": "NODE_ENV=local hardhat verify --network rinkeby",
+    "verify:dev": "NODE_ENV=dev hardhat verify --network rinkeby",
+    "verify:prod": "NODE_ENV=prod hardhat verify --network rinkeby"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hotpot-Swap/hotpot-swap-core.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hotpot-Swap/hotpot-swap-core/issues"
+  },
+  "homepage": "https://github.com/Hotpot-Swap/hotpot-swap-core#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.7",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^3.1.0",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.6.7",
+    "hardhat-contract-sizer": "^2.1.1"
+  },
+  "dependencies": {
+    "@hotpot-swap/hotpot-swap-lib": "^0.0.4",
+    "@nomiclabs/hardhat-etherscan": "^2.1.7"
+  }
+}
